@@ -6,12 +6,12 @@ public class Account {
     private String first_name;
     private String last_name;
     private int document_id;
-    private Date birthdate;
+    private String birthdate;
     private String email;
     private String password;
     private String address;
 
-    public Account(String first_name, String last_name, int document_id, Date birthdate, String email, String password, String address) {
+    public Account(String first_name, String last_name, int document_id, String birthdate, String email, String password, String address) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.document_id = document_id;
@@ -48,11 +48,11 @@ public class Account {
         this.document_id = document_id;
     }
 
-    public Date getBirthdate() {
+    public String getBirthdate() {
         return birthdate;
     }
 
-    public void setBirthdate(Date birthdate) {
+    public void setBirthdate(String birthdate) {
         this.birthdate = birthdate;
     }
 

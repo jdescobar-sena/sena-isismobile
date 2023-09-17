@@ -55,24 +55,13 @@ public class MainActivity extends AppCompatActivity {
         String first_name = edtx_name.getText().toString();
         String last_name = edtx_lastname.getText().toString();
         int document_id = Integer.parseInt(edtx_documentid.getText().toString());
-
-        /* parsear la fecha de nacimiento */
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        Date birthdate;
-        System.out.println(edtx_birthdate.getClass().getName());
-        try {
-            birthdate = format.parse(edtx_birthdate.getText().toString());
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
-        }
-
-        System.out.println(birthdate.getClass().getName());
-
-        // birthdate = (Date) edtx_birthdate.getText();
-
+        String birthdate = edtx_birthdate.getText().toString();
         String email = edtx_email.getText().toString();
         String password = edtx_password.getText().toString();
         String address = edtx_address.getText().toString();
+
+
+        System.out.println("DEBUG: \n" + birthdate);
 
         Account a = new Account(first_name, last_name, document_id, birthdate, email, password, address);
 
