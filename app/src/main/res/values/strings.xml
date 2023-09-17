@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Productos Isis</string>
+    <string name="first_name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="document_id">Documento de Identidad</string>
+    <string name="birthdate">Fecha de nacimiento</string>
+    <string name="email">Correo-e</string>
+    <string name="password">Contraseña</string>
+    <string name="address">Dirección</string>
+    <string name="register">Registrarse</string>
+    <string name="register_success">Registro exitoso</string>
+    <string name="register_failure">Registro fallido</string>
+    <string name="string">\@string/register_sucess</string>
+
+</resources>
